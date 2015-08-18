@@ -4,7 +4,7 @@ var fn=fs.readFileSync("./"+filename+".xml","utf8");
 
 var splitbySutra=function(m){
 	var content=m.replace(/<sutra id/g,"#<sutra id")
-				.replace(/<pb id="1.1b"\/>\r?\n#<sutra/g,'#<pb id="1.1b"/>\n<sutra');
+				.replace(/<pb id="1.1b"\/>\r?\n#<sutra/g,'#<pb id="1.1b"/>\r\n<sutra');
 	var arr=content.split("#");
 	arr.map(function(sutra){
 		sutra.replace(/M\d+/,function(id){
