@@ -12,4 +12,6 @@ var splitbySutra=function(m){
 		});
 	});
 }
+var t=new Date();
 splitbySutra(fn);
+console.log(new Date()-t);
