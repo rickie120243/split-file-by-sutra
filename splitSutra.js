@@ -3,7 +3,7 @@ var list=fs.readFileSync("./data_list.txt","utf8").split(/\r?\n/);
 
 var splitbySutra=function(m,fn){
 	var content=m.replace(/<sutra id/g,"#<sutra id")
-				.replace(/<pb id="1.1b"\/>\r?\n#<sutra/g,'#<pb id="1.1[ab]"/>\r\n<sutra');
+				.replace(/<pb id="1.1b"\/>\r?\n#<sutra/g,'#<pb id="1.1b"/>\r\n<sutra');
 	fn=fn.replace(/.xml/g,"");
 	var arr=content.split("#");
 	arr.map(function(sutra){
