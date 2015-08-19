@@ -12,7 +12,7 @@ var writeFile=function(path, contents, cb) {
 
 var splitbySutra=function(m,fn){
 	var content=m.replace(/<sutra id/g,"#<sutra id")
-				.replace(/<pb id="(1.\d+[ab])"\/>\r?\n#<sutra/,'#<pb id="$1"/>\r\n<sutra'); //
+				.replace(/<pb id="(\d+.\d+[ab])"\/>\r?\n#<sutra/,'#<pb id="$1"/>\r\n<sutra'); //
 	var name=fn.split(".");
 	var arr=content.split("#");
 	arr.map(function(sutra){
