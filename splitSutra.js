@@ -1,7 +1,7 @@
 var fs=require("fs");
-var mkdirp = require("mkdirp")
-var getDirName = require("path").dirname
-var list=fs.readFileSync("./data/data_list.txt","utf8").split(/\r?\n/);
+var mkdirp=require("mkdirp")
+var getDirName=require("path").dirname
+var list=fs.readdirSync("data");
 
 var writeFile=function(path, contents, cb) {
   mkdirp(getDirName(path), function (err) {
