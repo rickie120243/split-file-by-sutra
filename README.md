@@ -1,6 +1,6 @@
 # split-file-by-sutra步驟說明:
 
-1.將原資料放進/split-file-by-sutra/data的路徑目錄中。。
+1.將原資料放進/split-file-by-sutra/data的路徑目錄中。
 
 2.開啟Command Prompt於/split-file-by-sutra路徑中執行node splitSutra.js。
 
